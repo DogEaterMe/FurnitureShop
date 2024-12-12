@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FurnitureApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_yellow</item>
+        <item name="colorPrimaryVariant">@color/app_yellow_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_yellow</item>
+        <item name="colorSecondaryVariant">@color/app_yellow_dark</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/app_yellow</item>
+        <item name="colorControlHighlight">@color/app_yellow_light</item>
+        <item name="colorControlActivated">@color/app_yellow</item>
+        <item name="colorControlNormal">@color/app_yellow</item>
+    </style>
+</resources>

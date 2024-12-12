@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_options">
+        <item>По названию</item>
+        <item>По возрастанию цены</item>
+        <item>По убыванию цены</item>
+    </string-array>
+</resources> 

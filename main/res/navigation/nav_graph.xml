@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.furnitureapp.fragments.HomeFragment"
+        android:label="Главная">
+        <action
+            android:id="@+id/action_navigation_home_to_products_list"
+            app:destination="@id/products_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_categories"
+        android:name="com.example.furnitureapp.fragments.CategoriesFragment"
+        android:label="Категории">
+        <action
+            android:id="@+id/action_navigation_categories_to_products_list"
+            app:destination="@id/products_list"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.example.furnitureapp.fragments.CartFragment"
+        android:label="Корзина">
+        <action
+            android:id="@+id/action_navigation_cart_to_product_detail"
+            app:destination="@id/product_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/products_list"
+        android:name="com.example.furnitureapp.fragments.ProductListFragment"
+        android:label="Товары">
+        <argument
+            android:name="category"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="search_query"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_products_list_to_product_detail"
+            app:destination="@id/product_detail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_detail"
+        android:name="com.example.furnitureapp.fragments.ProductDetailFragment"
+        android:label="Описание товара">
+        <argument
+            android:name="productId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation> 
